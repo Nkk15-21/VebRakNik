@@ -1,0 +1,13 @@
+html{
+    background-color: #34495e;
+    width: 100%;
+}
+
+h1{ color: #f1c40f; }
+
+a{ text-decoration: none; }
+
+#content{
+    width: 648px;
+    margin: auto;
+}

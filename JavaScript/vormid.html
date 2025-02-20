@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vormist lugemine</title>
+  <script src="lugemine.js"></script>
+
+</head>
+<body>
+<!---------------------------------------------------h1------------------------------------------------------>
+
+<h1>Vormist lugemine js abil</h1>
+
+<label for="varv">Vali varv</label>
+<input type="color" id="varv">
+
+<label for="nimi">Nimi</label>
+<input type="text" id="nimi" name="nimi" oninput="tekstLugemine()">
+<div id="vastus"></div>
+<br>
+<input type="button" value="OK" onclick="nuppVajutamine()">
+<div id="vastus2"></div>
+
+<!-------------------------------------------------radio nupp----------------------------------------------->
+
+<input type="radio" id="jah" name="kysimus" value="jah" onchange="radioNupp()">
+<label for="jah">jah</label>
+
+<input type="radio" id="ei" name="kysimus" value="ei" onchange="radioNupp()">
+<label for="ei">ei</label>
+<input type="button" value="Radio Click" onclick="radioNupp()">
+
+<div id="vastus3"></div>
+<br>
+<img src="" alt="" id="pilt">
+<!---------------------------------------------------select-------------------------------------------------->
+
+<label for="valik">Tee oma valik, salaga:</label>
+<select name="valik" id="valik" onchange="selectValik()">
+
+        <option value=""></option>
+  <option value="õpilane">õpilane</option>
+  <option value="õpetaja">õpetaja</option>
+  <option value="üliõpilane">üliõpilane</option>
+  <option value="praktikant">praktikant</option>
+
+</select>
+<div id="vastus4"></div>
+
+
+<!--reset nupp-->
+<br>
+<input type="reset" value="Puhasta" onclick="puhasta()">
+
+
+</body>
+</html>

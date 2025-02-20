@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.dashboard-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dashboard {
+    width: 612px;
+    height: 612px;
+    max-width: 100%;
+}

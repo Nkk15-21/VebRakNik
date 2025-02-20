@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bd1c1c;
+}
+header{
+    text-align: center;
+    font-size: 20px;
+    font-variant: small-caps;
+    border: #370c0c solid 3px;
+    background-image: url('content/Clav.jpg');
+    background-color: #efbd17;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+header h1{
+    letter-spacing: 0.1cm;
+}
+
+nav{
+    margin: 0 0 10% 30%; /*lef top right down*/
+}
+
+nav ul li{
+    display: block;
+    float: left;
+    position: relative;
+    padding: 1%;
+    width: 10%;
+    background-color: #efbd17;
+    border: 3px solid #976901;
+    text-align: center;
+    margin-right: 1%;
+}
+
+img{
+    max-width: 20%;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    background-color: #976901;
+    text-align: center;
+    line-height: 1;
+}
+
+section{
+    margin: 10px;
+    width: 30%;
+    border: 5px solid #976901;
+    border-radius: 10px;
+    padding: 2%;
+}
+

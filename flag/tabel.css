@@ -1,0 +1,261 @@
+/**********************************************| html fail table id = tabel1 |**********************************/
+table#tabel1{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse; /*сливает рамки вместе*/
+}
+
+/********************************************************| ячейки |*********************************************/
+td{
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+/*первая строка и первая ячейка*/
+
+#tabel1 tr:nth-child(1) td:nth-child(1){
+    background-color: #f1c926;
+}
+#tabel1 tr:nth-child(1) td:nth-child(2  ){
+    background-color: #ff0000;
+}
+#tabel1 tr:nth-child(2) td:nth-child(1){
+    background-color: #7211ef;
+}
+#tabel1 tr:nth-child(2) td:nth-child(2){
+    background-color: #00ffbb;
+}
+/*****************************************************| TABLE ID=TABEL2 |****************************************/
+
+table#tabel2{
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*****************************************************| TABLE ID=TABEL3 |****************************************/
+
+table#tabel3{
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*****************************************************| TABLE ID=TABEL4 |****************************************/
+
+table#tabel4{
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+/*первая строка и первая ячейка*/
+
+#tabel4 tr:nth-child(1) td:nth-child(1){
+    background-color: #f1c926;
+    width: 33%;
+}
+#tabel4 tr:nth-child(1) td:nth-child(2){
+    background-color: #b30000;
+    width: 33%;
+}
+#tabel4 tr:nth-child(1) td:nth-child(3){
+    background-color: #ff0000;
+    width: 33%;
+}
+#tabel4 tr:nth-child(2) td:nth-child(1){
+    background-color: #7211ef;
+}
+#tabel4 tr:nth-child(3) td:nth-child(1){
+    background-color: #00ffbb;
+    width: 33%;
+}
+#tabel4 tr:nth-child(3) td:nth-child(2){
+    background-color: #86f3d6;
+    width: 33%;
+}
+
+/*****************************************************| TABLE ID=eesti |****************************************/
+
+#eesti{
+    width: 330px;
+    height: 210px;
+    border: grey;
+    border-collapse: collapse;
+}
+
+#eesti tr:nth-child(1){
+    background-color: blue;
+}
+#eesti tr:nth-child(2){
+    background-color: black;
+}
+#eesti tr:nth-child(3){
+    background-color: white;
+}
+
+/*****************************************************| TABLE ID=France |****************************************/
+
+#france{
+    width: 330px;
+    height: 210px;
+    border: grey;
+    border-collapse: collapse;
+}
+
+#france td:nth-child(1){
+    background-color: #0000b6;
+    width: 33%;
+}
+#france td:nth-child(2){
+    background-color: #ffffff;
+    width: 33%;
+
+}
+#france td:nth-child(3){
+    background-color: #c80000;
+    width: 33%;
+
+}
+
+/*****************************************************| TABLE ID= RUSSIA |****************************************/
+
+#Russia{
+    width: 330px;
+    height: 210px;
+    border: grey;
+    border-collapse: collapse;
+}
+
+#Russia tr:nth-child(1){
+    background-color: #ffffff;
+}
+#Russia tr:nth-child(2){
+    background-color: #0029ff;
+}
+#Russia tr:nth-child(3){
+    background-color: #ff0000;
+}
+
+/*****************************************************| TABLE ID= Sweden |****************************************/
+
+#Sweden{
+    width: 330px;
+    height: 190px;
+    border: 1px solid transparent;
+    border-collapse: collapse;
+}
+
+#Sweden tr:nth-child(1) td:nth-child(1){
+    background-color: #233597;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(1) td:nth-child(2){
+    background-color: #f8ff00;
+    width: 10%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(1) td:nth-child(3){
+    background-color: #233597;
+    width: 70%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(2){
+    background-color: #f8ff00;
+    height: 20%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(3) td:nth-child(1){
+    background-color: #233597;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(3) td:nth-child(2){
+    background-color: #f8ff00;
+    width: 10%;
+    border: 1px solid transparent;
+}
+#Sweden tr:nth-child(3) td:nth-child(3){
+    background-color: #233597;
+    width: 70%;
+    border: 1px solid transparent;
+}
+
+/*****************************************************| TABLE ID= Swizerland |****************************************/
+
+#Swizerland{
+    width: 200px;
+    height: 200px;
+    border: 1px solid transparent;
+    border-collapse: collapse;
+}
+
+#Swizerland tr:nth-child(1){
+    background-color: #ff0000;
+    width: 100%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(2) td:nth-child(1) {
+    background-color: #ff0000;
+    width: 40%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(2) td:nth-child(2) {
+    background-color: #ffffff;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(2) td:nth-child(3) {
+    background-color: #ff0000;
+    width: 40%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(3) td:nth-child(1) {
+    background-color: #ff0000;
+    width: 20%;
+    border: 1px solid transparent;
+}
+
+#Swizerland tr:nth-child(3) td:nth-child(2) {
+    background-color: #ffffff;
+    width: 60%;
+    border: 1px solid transparent;
+}
+
+#Swizerland tr:nth-child(3) td:nth-child(3) {
+    background-color: #ff0000;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(2) td:nth-child(2) {
+    background-color: #ffffff;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(4) td:nth-child(1) {
+    background-color: #ff0000;
+    width: 40%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(4) td:nth-child(2) {
+    background-color: #ffffff;
+    width: 20%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(4) td:nth-child(3) {
+    background-color: #ff0000;
+    width: 40%;
+    border: 1px solid transparent;
+}
+#Swizerland tr:nth-child(5){
+    background-color: #ff0000;
+    width: 100%;
+    border: 1px solid transparent;
+}

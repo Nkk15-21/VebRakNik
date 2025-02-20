@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>Map area element HTML</title>
+  <link rel="stylesheet" href="rect.css">
+</head>
+<body>
+
+<h1>Map ootab hiire klick!</h1>
+<img src="mapPilt.png" alt="pilt" usemap="#pilt">
+<map name="pilt">
+  <!-- circle coords = x,y,R-->
+  <area shape="circle" coords="408,115,70" href="ring.html" alt="ring">
+  <!-- rect coords = x,y,x1,y1-->
+  <area shape="rect" coords=" 19,37, 209, 132" href="rect.html" alt="ristmik">
+  <!-- triangl coords = x,y,x1,y1,x2,y2-->
+  <area shape="poly" coords="177,338,260,197,342,338" href="poly.html" alt="poly">
+</map>
+
+<div id="Kirjeldus">Это прямоугольник</div>
+
+</body>
+</html>
