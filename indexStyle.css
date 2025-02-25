@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #bd1c1c;
 }
+
 header{
     text-align: center;
     font-size: 20px;
@@ -12,6 +13,7 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 header h1{
     letter-spacing: 0.1cm;
 }
@@ -47,10 +49,16 @@ nav ul li:hover{
 }
 
 section{
-    margin: 10px;
+    margin: auto;
     width: 30%;
-    border: 5px solid #976901;
+    border: 5px solid #e3a104;
     border-radius: 10px;
     padding: 2%;
+    text-align: center;
+    position: relative;
 }
 
+footer {
+    float: left;
+    margin: 20% 0 10% 0%; /*lef top right down*/
+}
