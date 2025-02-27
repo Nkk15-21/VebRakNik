@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Pildi mõistatus</title>
+    <script src="../mõstatus/mystatusScript.js"></script>
+    <link rel="stylesheet" href="../mõstatus/style.css">
+</head>
+<body>
+
+<h1>Piltmõistatus</h1>
+<input type="button" value="Random pilt" onclick="randomPilt()">
+<br>
+<img src="" alt="" id="randomPilt">
+<br>
+<div id="radio">
+    <strong>Mõista välja mis on pildil</strong>
+    <br>
+    <input type="radio" name="valik" id="pilt1" value=" ../mõstatus/img/r1.jpg" onclick="radioValik()">
+    <label for="pilt1">Portret - 50 euro</label>
+    <br>
+    <input type="radio" name="valik" id="pilt2" value="../mõstatus/img/r2.jpg" onclick="radioValik()">
+    <label for="pilt2">Ramm-stein - 130 euro</label>
+    <br>
+    <input type="radio" name="valik" id="pilt3" value="../mõstatus/img/r3.jpg" onclick="radioValik()">
+    <label for="pilt3">Engel - 9.(9) euro</label>
+    <br>
+    <div id="vastus"></div>
+</div>
+
+<div id="kogusInput">
+    <label for="kogus">How much do you wont?</label>
+    <input type="number" id="kogus" min="1" max="100" step="1" onclick="radioHindArv()">
+    <div id="vastus2"></div>
+</div>
+
+
+
+</body>
+</html>
