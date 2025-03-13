@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>iQuery näited</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <script>
+        function orange(){ // color of text - orange
+            $('h1').css('color', 'orange');
+        }
+        function must() { // color of text - black
+            $('h1').css('color', 'black');
+        }
+        function roh(){ // color of text - green
+            $('#tekst').css('color', 'green');
+        }
+        function koordinadid(event, ui){
+            var koht = ui.offset;
+            $('#kor').html('x: '+koht.left + '; y: '+koht.top);
+        }
+
+
+        function  start(){
+            $('h1').mouseenter(orange); //  мышка на сайте
+            $('h1').mouseleave(must); // мышка не на сайте
+            $('#tekst').mouseleave(roh); // мышка не на сайте
+            $('#pilt').draggable();
+            $('#tekst').draggable();
+            $('#pilt').bind("drag", koordinadid);
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                });
+            });
+        }
+    </script>
+
+</head>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<body onload="start()">
+
+<h1> jQuery CDN </h1>
+
+    <div id="tekst">
+        <ul>
+            <li>
+                Газораспределительный механизм (ГРМ) — часть двигателя внутреннего сгорания, которая обеспечивает впуск наполнение цилиндров свежим воздухом (или топливно-воздушной смесью) и выпуск отработанных газов в выхлопную систему.
+            </li>
+            <li>
+                Клапанный ГРМ включает один или два распределительных вала (в расчете на один ряд цилиндров), а также коромысла, пружины, клапаны и т. д.
+                Существуют также конструкции ГРМ с вращающимися или качающимися распределительными гильзами или золотниками.
+            </li>
+            <li>
+                Система привода распределительного вала четырёхтактного двигателя обеспечивает его вращение с угловой скоростью, равной 1/2 угловой скорости коленвала.
+            </li>
+            <li>
+                ГРМ также может иметь как фиксированные фазы газораспределения, так и регулируемые, в зависимости от частоты вращения коленвала и других факторов.
+            </li>
+        </ul>
+    </div>
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<input type="button" id="p" value="paremale" onclick="$('div#tekst').animate({left:'500px'}, 200)">  <!--1000 - speed--->
+<input type="button" id="v" value="vasakule" onclick="$('div#tekst').animate({left:'0px'}, 200)">  <!--1000 - speed--->
+
+<br>
+<img src="80802.png" alt="gitara" id="pilt" width="450">
+<div id="kor"></div>
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+</body>
+</html>
