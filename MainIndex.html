@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nikita Konkin koduleht</title>
-  <link rel="stylesheet" href="indexStyle.css"> <!-- Перенесено в <head> -->
+  <link rel="stylesheet" href="MainStyle.css"> <!-- Перенесено в <head> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+  <script src="MainJs.js"></script>
+
+
 </head>
-<body>
+<body onload="start()">
 
 <!-- Шапка -->
 <header>
@@ -14,7 +21,7 @@
 </header>
 
 <!-- Навигационное меню -->
-<nav>
+<nav id="nav">
   <ul>
     <li><a href="#">Avaleht</a></li>
     <li><a href="content/lingid.html">Lingid</a></li>
@@ -24,24 +31,21 @@
 </nav>
 
 <!-- Основной контент -->
-<main>
-  <section>
-    <h2>Õpilase info</h2>
-    <div>
+
+<section id="main">
+  <h2 id="flip">Õpilase info</h2>
+    <div id="panel"><div id="info">
 
       Кто я такой и что из себя представляю:
-        <ul>
-          Кто я?
-          <br>
-          Приветствую! Я Никита Конкин, мне 20 лет. Приехал я с Ида-Вирумаа, уже больше года живу в Таллинне.
-        </ul>
-      <ul>
-        Черты характера:
+      <ul>Кто я?
+        <br>
+        Приветствую! Я Никита Конкин, мне 20 лет. Приехал я с Ида-Вирумаа, уже больше года живу в Таллинне.
+      </ul>
+      <ul>Черты характера:
         <br>
         Целеустремлённый, Решительный, Ответственный,Общительный, Умеющий поддержать товарища, Всегда рад помочь
       </ul>
-      <ul>
-        Увлечения:
+      <ul>Увлечения:
         <br>
         Занимаюсь музыкой, играю на гитаре акустической и электронной, в добавок играю на барабанах.
         Нравится заниматься земледелием, столярными работами, строительством, заниматься кодингом,
@@ -49,12 +53,7 @@
       </ul>
 
     </div>
-  </section>
-  <section>
-    <h2>Õpilase info</h2>
-    <div>Что-то ещё</div>
-  </section>
-</main>
+</section>
 
 <!-- Подвал -->
 <footer>

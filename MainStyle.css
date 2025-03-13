@@ -62,3 +62,16 @@ footer {
     float: left;
     margin: 20% 0 10% 0%; /*lef top right down*/
 }
+
+section#main {
+    background-color: #efbd17;
+    text-align: center;
+    margin: 0 0 5% 33%; /*top top down left*/
+    background-repeat: no-repeat;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+    background-color: #efbd17;
+}
