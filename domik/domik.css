@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+canvas {
+    border: 2px solid #333;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.nupud {
+    margin-top: 20px;
+}
+
+input[type="button"] {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #45a049;
+}
